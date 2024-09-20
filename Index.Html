@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Figurinhas PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Criador de Figurinhas</h1>
+
+    <form id="sticker-pack-form">
+        <input type="text" id="packName" placeholder="Nome do Pacote" required><br>
+        <input type="text" id="packAuthor" placeholder="Autor do Pacote" required><br>
+        <input type="file" id="upload" accept="image/*" multiple required><br><br>
+        <canvas id="canvas" width="512" height="512"></canvas><br>
+        <button type="button" id="addSticker">Adicionar Figurinhas</button><br><br>
+        <button type="submit">Gerar Pacote de Figurinhas</button><br><br>
+        <button type="button" id="shareButton">Compartilhar no WhatsApp</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
